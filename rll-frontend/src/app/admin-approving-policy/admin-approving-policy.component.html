@@ -1,0 +1,63 @@
+<!-- <app-admin-dashboard></app-admin-dashboard> -->
+<!-- <div class="container mt-5 w-50 bg-light border border-2 rounded">
+    <br/>
+    <span style="color: green;" class="text-center"><h5>{{msg}}</h5></span>
+    <h1 class="text-center ">Approve Policy</h1>
+<form class="fs-4" [formGroup]="policyRef" (ngSubmit)="updateUserStatus()">
+    <div class="mb-3">
+      <label class="form-label">Policy Id</label>
+      <input type="number" class="form-control" formControlName = "userid">
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">Status</label>
+        <input type="text" class="form-control" formControlName = "status">
+    </div>
+    <div class="text-center">
+    <button type="submit" class="btn btn-primary me-2" >Submit</button>
+    
+    <button type="submit" class="btn btn-primary " (click)="goBack()">Go Back</button><br/>
+    </div>
+    <br/>
+  </form>
+
+</div> -->
+           
+<div class="container mt-5  border border-2 rounded" id="login">
+  <br/>
+  
+  <span style="color: red;" class="text-center"><h1>{{msg}}</h1></span>
+  <h1 class="text-center fs-2"><strong>Policy Action </strong></h1>
+  <br/>
+<form class="fs-4" [formGroup]="policyRef" (ngSubmit)="updateUserStatus()">
+  <div class="mb-3">
+    <label class="form-label">User ID</label>
+    <input type="text" class="form-control" formControlName = "userid">
+  </div>
+  <br/>
+    <div class="mb-3"> 
+    <label class="form-label">Status: Type ? Approve/Reject</label>
+    <input type="text" class="form-control" formControlName = "status">
+  </div>
+  
+  
+ 
+
+
+<br/>
+  <div class="text-center">
+  <button type="submit" class="btn btn-primary me-2" style="width: 150px;">Submit</button>
+  
+  <br/>
+<br/>
+<div class="back">
+  <p>GO Back ? <a routerLink="admin-checking-apply-policy"><button type="submit" class="btn btn-success me-2" style="width: 150px;" >Back</button></a></p>
+  
+  </div>
+  
+  
+  </div>
+  <br/>
+</form>
+
+</div>

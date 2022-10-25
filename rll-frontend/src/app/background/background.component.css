@@ -1,0 +1,11 @@
+
+#sect1 {  
+    height: 700 px;  
+    color: #fff;background-image: url("../../assets/images/life.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* background-size : 100 % ;  
+    background-size : cover;   */
+    
+} 

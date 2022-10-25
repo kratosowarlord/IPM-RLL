@@ -1,0 +1,83 @@
+<!-- <div class="container mt-5 w-50 bg-light border border-2 rounded">
+    <br/>
+    <span style="color: green;" class="text-center"><h5>{{msg}}</h5></span>
+    <h1 class="text-center ">Update Policy</h1>
+<form class="fs-4" [formGroup]="policyRef" (ngSubmit)="updatePolicy()">
+    <div class="mb-3"> 
+        <label class="form-label">Policy id</label>
+        <input type="text" class="form-control" formControlName = "policyid">
+      </div>
+    <div class="mb-3"> 
+      <label class="form-label">Policy Name</label>
+      <input type="text" class="form-control" formControlName = "policyname">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Category</label>
+        <input type="text" class="form-control" formControlName = "category">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Amount</label>
+        <input type="email" class="form-control" formControlName = "amount">
+    </div>
+    <div class="text-center">
+    <button type="submit" class="btn btn-primary me-2" >Submit</button>
+    
+    <button type="submit" class="btn btn-primary " (click)="goBack()">Go Back</button><br/>
+    </div>
+    <br/>
+  </form>
+
+</div> -->
+           
+<div class="container mt-5  border border-2 rounded" id="login">
+  <br/>
+  
+  <span style="color: red;" class="text-center"><h1>{{msg}}</h1></span>
+  <h1 class="text-center fs-2"><strong>Update Existing Policy </strong></h1>
+  <br/>
+<form class="fs-4" [formGroup]="policyRef" (ngSubmit)="updatePolicy()">
+  <div class="mb-3">
+    <label class="form-label">Policy ID</label>
+    <input type="text" class="form-control" formControlName = "policyid">
+  </div>
+  <br/>
+  <div class="mb-3"> 
+    <label class="form-label">Policy Name</label>
+    <input type="text" class="form-control" formControlName = "policyname">
+  </div>
+  <br/>
+  <div class="mb-3"> 
+    <label class="form-label">Category</label>
+    <input type="text" class="form-control" formControlName = "category">
+  </div>
+  <br/>
+  <div class="mb-3"> 
+    <label class="form-label">Amount</label>
+    <input type="text" class="form-control" formControlName = "amount">
+  </div>
+  <br/>
+  <div class="mb-3"> 
+    <label class="form-label">Features</label>
+    <input type="text" class="form-control" formControlName = "features">
+  </div>
+  
+ 
+
+
+<br/>
+  <div class="text-center">
+  <button type="submit" class="btn btn-primary me-2" style="width: 150px;">Submit</button>
+  
+  <br/>
+<br/>
+<div class="back">
+  <p>GO Back ? <button type="submit" class="btn btn-success me-2" style="width: 150px;" (click)="goBack()">Back</button></p>
+  
+  </div>
+  
+  
+  </div>
+  <br/>
+</form>
+
+</div>

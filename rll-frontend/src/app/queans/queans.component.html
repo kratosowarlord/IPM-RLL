@@ -1,0 +1,99 @@
+<div class="container-fluid bg-warning text-center" style="height:80px;">
+    <br/>
+    <h1>Ask Any Questions</h1>
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-6 m-auto mt-5">
+        <form method="post" name="questionform">
+          <div class="form-outline mb-2">
+            <input
+              type="text"
+              id="question"
+              name="question"
+              [(ngModel)]="question"
+              placeholder="Enter Your question"
+              class="form-control me-2"
+              required
+            />
+          </div>
+          <button
+            class="btn btn-primary btn-block mb-4"
+            type="button"
+            value="Log In"
+            (click)="doSubmit()"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      
+    </div>
+    <div class="container bg-primary" id="ques">
+        <h1>Recently Asked Questions By Customers</h1>
+    </div>
+    <div class="col-6 mt-5" *ngIf="QuestionList">
+        <p class="fw-bolder">Questions</p>
+        <table  class="table table-bordered">
+          <thead>
+            <tr>
+              <td scope="col">No.</td>
+              <td scope="col">Question</td>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let question of QuestionList">
+              <td>{{question['cid']}}</td>
+              <td>{{question['question']}}</td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+ </div>
+ <hr>
+ <div class="container">
+    <div class="row">
+      <!-- <div class="col-6 m-auto mt-5"> -->
+        <!-- <form method="post" name="answerform">
+          <div class="form-outline mb-2">
+            <input
+              type="text"
+              id="answer"
+              name="answer"
+              [(ngModel)]="answer"
+              placeholder="Enter Your answer"
+              class="form-control me-2"
+              required
+            />
+          </div>
+          <button
+            class="btn btn-primary btn-block mb-4"
+            type="button"
+            value="Log In"
+            (click)="doSubmit1()"
+          >
+            Submit
+          </button>
+        </form> -->
+      <!-- </div> -->
+      
+    </div>
+
+    <div class="col-6 mt-5" >
+        <p class="fw-bolder">Answers</p>
+        <table  class="table table-bordered">
+          <thead>
+            <tr>
+              <td scope="col">No.</td>
+              <td scope="col">Answer</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let answer of AnswerList">
+              <td>{{answer['ansid']}}</td>
+              <td>{{answer['answer']}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+ </div>

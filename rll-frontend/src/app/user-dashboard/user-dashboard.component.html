@@ -1,0 +1,101 @@
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-warning border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading"><strong>User Dashboard</strong></div>
+      <!-- <div class="list-group list-group-flush ">
+        <a routerLink="admin-dashboard" class="list-group-item list-group-item-action bg-light text-center">Dashboard<span class="sr-only text-danger"></span></a><br/>
+        <a routerLink="admin-policy" class="list-group-item list-group-item-action bg-light text-center">Policy<span class="sr-only"></span></a><br/>
+         <a href="#" class="list-group-item list-group-item-action bg-light text-center">Customers</a><br/>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a> -->
+        <!-- <a href="#" class="list-group-item list-group-item-action bg-light text-center">Questions</a><br/>
+        <a href="#" class="list-group-item list-group-item-action bg-light text-center">Logout</a> -->
+      <!-- </div>  -->
+      <mat-nav-list>
+        <div class = "logo py-4">
+            <img src ="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAGgAZQMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQMEAgUG/9oACAEBAAAAAPpQAIlCUExHQOM2wEJz4vJxe5d6qUHlepU6yxvkwxfR1dm6r9JE4b/N9TDe5r9FLPXR31fm6r9Ihi5NGbvj0SE+bpkw6dkhVgFu8iUJQTDnsAI//8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oACgICEAMQAAAAAAANZllDWQJqDeNZllzqUs1mUzoAogAAP//EADUQAAIBAwAHBAgGAwAAAAAAAAECAwAEEQUSExQhMZIVIFRjEDAyNEFRU3IiQFJhYpEjQqL/2gAIAQEAAT8A/KH0D1TukaM7nCrzNQX1tO+ojnW7+az6Lm6htVDSE/so5mo9JiaKdkiwUTIyauby5ulCuUCfJaDNE4IbDKcgirPSk00ojkVPYY1DpeCQ4dGSs93FEhRkkAfM1JFZ3N2JXuQ3l0VUjBAwRyrdrf6KdIrdrb6EfSKSGFDlIkU/MACtIRI9rKxA1kGQa0Y5eyjz8Cy92aa4M+wh1AdTWLNQsQ51riV5TRtbcrqmFcVuksXu85H8W4ioZ5pI5/wKZYzj9jULztGTLGFfJwBW20h4ZKuDI1hMZFCvszkVon3Jfvfuz/47y2k+DAoamnjgAL541FdRrczSEvqtnFJMjxbUezgn+qtjJHaGVYy7ySE4qGe4d8SW5QY51LPOjkJAXHzq4ZnsJy6apMZyK0T7kv3v3bqHbwsg581qForuJTIill4MCORqK0xdTF4RsuOrV0RhLSEAF/8Alaa4MB2SW0jKoAyKhmMsZcxMmCeBrfpPBy1cOZLCZyhQmM8DWifcl+9+9PDJHIbiD2v90/VRv0KKIVLStySkTdUaaQGSVyNbFb+PoS1POIApKM2T8K7RT6EtTvtrCZwpGYzwNaK4WS/e/dx6Lm8S0uUDQYD85KF3aHiLmLqrerXxMXVQu7TxMXVW92niYuqr++txbuiSB2cVYRvHaRh+Zy3V35YYp01JEDCuyLPzOquyLTzOquyLTzOquyLTzOqotG2kThwhJH6jn8jrfxb+vW//xAAgEQEAAgIBBQEBAAAAAAAAAAABABEhQQIQEiAiMDFx/9oACAECAQE/APlUp8O02z1d1/YiRK2R64QXWGcjjyQI7e0zEQMEeo1LNGJiz1jT+caj42y/l//EAB8RAQABAwUBAQAAAAAAAAAAAAEAESFBAhASIDAiUv/aAAgBAwEBPwDyrK9OTgn0YgjBHDDe4oZuTS6gawwcm0EVvDdKyjlvL/qFc6u1Dz//2Q==" alt="policy logo"/>
+        </div>
+        <!-- <h2 matSubheader class ="mt-2">ADMIN</h2> -->
+        <mat-divider></mat-divider>
+        <br/>
+        <a  mat-list-item routerLink="user-dashboard" routerLinkActive="list-item-active" >
+            <mat-icon>Home</mat-icon>Home
+        </a>
+        
+        <a mat-list-item routerLink="userPolicy" routerLinkActive="list-item-active">
+            <mat-icon>Avaliable Policies</mat-icon>Avaliable Policies
+        </a>
+        <a mat-list-item routerLink="user-policy-status" routerLinkActive="list-item-active">
+            <mat-icon>Status</mat-icon>Status
+        </a>
+        <a mat-list-item routerLink="quesans" routerLinkActive="list-item-active">
+          <mat-icon>Questions</mat-icon>Questions
+      </a>
+      <a mat-list-item routerLink="background" routerLinkActive="list-item-active">
+        <mat-icon>Logout</mat-icon>Logout
+    </a>
+    </mat-nav-list>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper" >
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+      <div class="container-fluid ">
+        <h1 class="mt-4 text-center ">Welcome to Dashboard <span class="fs-1 text-danger">{{user}}</span></h1>
+        <br/>
+        <img src="assets/images/user.jpg" class="text-center rounded mx-auto d-block" style="width: 250px;">
+        <!-- <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p> -->
+       
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+
+
+
+
+  <!-- <mat-nav-list>
+    <div class = "logo py-4">
+        <img src ="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAGgAZQMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQMEAgUG/9oACAEBAAAAAPpQAIlCUExHQOM2wEJz4vJxe5d6qUHlepU6yxvkwxfR1dm6r9JE4b/N9TDe5r9FLPXR31fm6r9Ihi5NGbvj0SE+bpkw6dkhVgFu8iUJQTDnsAI//8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oACgICEAMQAAAAAAANZllDWQJqDeNZllzqUs1mUzoAogAAP//EADUQAAIBAwAHBAgGAwAAAAAAAAECAwAEEQUSExQhMZIVIFRjEDAyNEFRU3IiQFJhYpEjQqL/2gAIAQEAAT8A/KH0D1TukaM7nCrzNQX1tO+ojnW7+az6Lm6htVDSE/so5mo9JiaKdkiwUTIyauby5ulCuUCfJaDNE4IbDKcgirPSk00ojkVPYY1DpeCQ4dGSs93FEhRkkAfM1JFZ3N2JXuQ3l0VUjBAwRyrdrf6KdIrdrb6EfSKSGFDlIkU/MACtIRI9rKxA1kGQa0Y5eyjz8Cy92aa4M+wh1AdTWLNQsQ51riV5TRtbcrqmFcVuksXu85H8W4ioZ5pI5/wKZYzj9jULztGTLGFfJwBW20h4ZKuDI1hMZFCvszkVon3Jfvfuz/47y2k+DAoamnjgAL541FdRrczSEvqtnFJMjxbUezgn+qtjJHaGVYy7ySE4qGe4d8SW5QY51LPOjkJAXHzq4ZnsJy6apMZyK0T7kv3v3bqHbwsg581qForuJTIill4MCORqK0xdTF4RsuOrV0RhLSEAF/8Alaa4MB2SW0jKoAyKhmMsZcxMmCeBrfpPBy1cOZLCZyhQmM8DWifcl+9+9PDJHIbiD2v90/VRv0KKIVLStySkTdUaaQGSVyNbFb+PoS1POIApKM2T8K7RT6EtTvtrCZwpGYzwNaK4WS/e/dx6Lm8S0uUDQYD85KF3aHiLmLqrerXxMXVQu7TxMXVW92niYuqr++txbuiSB2cVYRvHaRh+Zy3V35YYp01JEDCuyLPzOquyLTzOquyLTzOquyLTzOqotG2kThwhJH6jn8jrfxb+vW//xAAgEQEAAgIBBQEBAAAAAAAAAAABABEhQQIQEiAiMDFx/9oACAECAQE/APlUp8O02z1d1/YiRK2R64QXWGcjjyQI7e0zEQMEeo1LNGJiz1jT+caj42y/l//EAB8RAQABAwUBAQAAAAAAAAAAAAEAESFBAhASIDAiUv/aAAgBAwEBPwDyrK9OTgn0YgjBHDDe4oZuTS6gawwcm0EVvDdKyjlvL/qFc6u1Dz//2Q==" alt="policy logo"/>
+    </div>
+    <h2 matSubheader class ="mt-2">ADMIN</h2>
+    <mat-divider></mat-divider>
+    <a mat-list-item routerLink="/home" routerLinkActive="list-item-active" >
+        <mat-icon>Home</mat-icon>Home
+    </a>
+    <a mat-list-item routerLink="/admindashboard" routerLinkActive="list-item-active">
+        <mat-icon>Dashboard</mat-icon>Dashboard
+    </a>
+    <a mat-list-item routerLink="/policies" routerLinkActive="list-item-active">
+        <mat-icon>Policies</mat-icon>Policies
+    </a>
+    <a mat-list-item routerLink="/appliedpolicies" routerLinkActive="list-item-active">
+        <mat-icon>User Applied Policies</mat-icon>User Applied Policies
+    </a>
+</mat-nav-list> -->
+
