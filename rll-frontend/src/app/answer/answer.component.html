@@ -1,46 +1,51 @@
-<div class="container">
-    <div class="row">
-      <div class="col-6 m-auto mt-5">
-        <form method="post" name="answerform">
-          <div class="form-outline mb-2">
-            <input
-              type="text"
-              id="answer"
-              name="answer"
-              [(ngModel)]="answer"
-              placeholder="Enter Your answer"
-              class="form-control me-2"
-              required
-            />
-          </div>
-          <button
-            class="btn btn-primary btn-block mb-4"
-            type="button"
-            value="Log In"
-            (click)="doSubmit()"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-      
-    </div>
 
-    <div class="col-6 mt-5" >
-        <p class="fw-bolder">Answers</p>
-        <table  class="table table-bordered">
-          <thead>
-            <tr>
-              <td scope="col">Ansid</td>
-              <td scope="col">Answer</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let answer of AnswerList">
-              <td>{{answer['ansid']}}</td>
-              <td>{{answer['answer']}}</td>
-            </tr>
-          </tbody>
-        </table>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-6 m-auto mt-5">
+      <form method="post" name="answerform">
+        <div class="form-outline mb-2">
+          <input
+            type="text"
+            id="answer"
+            name="answer"
+            [(ngModel)]="answer"
+            placeholder="Enter Your answer"
+            class="form-control me-2"
+            required
+          />
+        </div>
+        <button
+          class="btn btn-primary btn-block mb-4"
+          type="button"
+          value="Log In"
+          (click)="doSubmit()"
+        >
+          Submit
+        </button>
+      </form>
     </div>
- </div>
+    
+  </div>
+
+  <div class="col-6 mt-5" >
+      <p class="fw-bolder">Answers</p>
+      <table  class="table table-bordered">
+        <thead>
+          <tr>
+            <td scope="col">Ansid</td>
+            <td scope="col">Answer</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let answer of AnswerList">
+            <td>{{answer['ansid']}}</td>
+            <td>{{answer['answer']}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+
+

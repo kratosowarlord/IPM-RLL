@@ -16,6 +16,8 @@ export class UserPolicyStatusComponent implements OnInit {
   //   name:new FormControl(),
   //   applieddate:new FormControl()
   // });
+  
+  
 
   applypolicy:Array<UserPolicy>=[];
   constructor(public ups:UserPolicyService,public router:Router) { }
@@ -32,6 +34,7 @@ export class UserPolicyStatusComponent implements OnInit {
     })
 
   }
+
   goBack(){
     this.router.navigate(['user-dashboard']);
   }
