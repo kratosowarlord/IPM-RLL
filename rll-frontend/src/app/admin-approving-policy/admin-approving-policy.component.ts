@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Location} from '@angular/common';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AdminPolicyService } from '../admin-policy.service';
@@ -17,7 +18,7 @@ export class AdminApprovingPolicyComponent implements OnInit {
     status: new FormControl()
   })
   constructor(public aps: UserPolicyService,
-    public reouter:Router) { }
+    public reouter:Router, private _loc: Location) { }
 
   ngOnInit(): void {
   }
@@ -31,9 +32,10 @@ export class AdminApprovingPolicyComponent implements OnInit {
 
     this.policyRef.reset();
   }
-
-   goBack(){
-    this.reouter.navigate(["admin-checking-apply-policy"]);
+  
+   // back from the curren page
+   goToBack(){
+    this._loc.back();
    }
 
 }
