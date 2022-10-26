@@ -18,7 +18,7 @@ export class AddPolicyComponent implements OnInit {
     features: new FormControl()
   })
 
-  // policy:Array<AdminPolicy>=[];
+   policy:Array<AdminPolicy>=[];
   constructor(public aps: AdminPolicyService,
     public reouter:Router) { }
 

@@ -13,7 +13,7 @@ public class Policy {
 	private int policyid;
 	public String policyname;
 	public String category;
-	public double amount;
+	public String amount;
 	public String features;
 	public String getFeatures() {
 		return features;
@@ -39,10 +39,10 @@ public class Policy {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	public double getAmount() {
+	public String getAmount() {
 		return amount;
 	}
-	public void setAmount(double amount) {
+	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 	@Override
