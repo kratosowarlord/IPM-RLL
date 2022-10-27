@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AdminPolicyService } from '../admin-policy.service';
+import {Location} from '@angular/common';
 @Component({
   selector: 'app-update-policy',
   templateUrl: './update-policy.component.html',
@@ -17,7 +18,7 @@ export class UpdatePolicyComponent implements OnInit {
     features: new FormControl()
   })
   constructor(public aps: AdminPolicyService,
-    public reouter:Router) { }
+    public reouter:Router, private _loc: Location) { }
 
   ngOnInit(): void {
   }
@@ -33,7 +34,7 @@ export class UpdatePolicyComponent implements OnInit {
   }
 
    goBack(){
-    this.reouter.navigate(["admin-dashboard"]);
+    this._loc.back();
    }
 
 }

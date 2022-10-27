@@ -3,6 +3,7 @@ import {FormGroup,FormControl} from '@angular/forms';
 import { Router } from '@angular/router';
 import { AdminPolicy } from '../admin-policy';
 import { AdminPolicyService } from '../admin-policy.service';
+import {Location} from '@angular/common';
 @Component({
   selector: 'app-view-policy',
   templateUrl: './view-policy.component.html',
@@ -18,7 +19,7 @@ export class ViewPolicyComponent implements OnInit {
   // });
 
   policy:Array<AdminPolicy>=[]
-  constructor(public aps:AdminPolicyService,public router:Router) { }   
+  constructor(public aps:AdminPolicyService,public router:Router,private _loc: Location) { }   
 
   ngOnInit(): void {
     this.loadPolicyDetails();    
@@ -33,6 +34,7 @@ export class ViewPolicyComponent implements OnInit {
 
   }
   goBack(){
-    this.router.navigate(['admin-dashboard']);
+    this._loc.back();
   }
+  
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AdminPolicy } from '../admin-policy';
 import { AdminPolicyService } from '../admin-policy.service';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-delete-policy',
@@ -11,7 +12,7 @@ import { AdminPolicyService } from '../admin-policy.service';
 export class DeletePolicyComponent implements OnInit {
 
   policy:Array<AdminPolicy>=[]
-  constructor(public aps:AdminPolicyService,public router:Router) { }   
+  constructor(public aps:AdminPolicyService,public router:Router, private _loc: Location) { }   
 
   ngOnInit(): void {
     this.loadPolicyDetails();    
@@ -36,6 +37,6 @@ export class DeletePolicyComponent implements OnInit {
     })
   }
   goBack(){
-    this.router.navigate(['admin-dashboard']);
+    this._loc.back();
   }
 }

@@ -13,6 +13,7 @@ export class AdminPolicyService {
   addPolicyData(product:any):Observable<string> {
     return this.http.post(this.baseUrl+"/addPolicy",product,{responseType:"text"});
   }
+  
   updatePolicyData(product:any):Observable<string> {
     return this.http.put(this.baseUrl+"/updatePolicy",product,{responseType:"text"});
   }

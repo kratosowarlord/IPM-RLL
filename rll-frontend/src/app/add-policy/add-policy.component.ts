@@ -3,6 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AdminPolicy } from '../admin-policy';
 import { AdminPolicyService } from '../admin-policy.service';
+import {Location} from '@angular/common';
 @Component({
   selector: 'app-add-policy',
   templateUrl: './add-policy.component.html',
@@ -20,7 +21,7 @@ export class AddPolicyComponent implements OnInit {
 
    policy:Array<AdminPolicy>=[];
   constructor(public aps: AdminPolicyService,
-    public reouter:Router) { }
+    public reouter:Router,private _loc: Location) { }
 
   ngOnInit(): void {
   }
@@ -37,7 +38,7 @@ export class AddPolicyComponent implements OnInit {
   }
 
    goBack(){
-    this.reouter.navigate(["admin-dashboard"]);
+    this._loc.back();
    }
 
 }
